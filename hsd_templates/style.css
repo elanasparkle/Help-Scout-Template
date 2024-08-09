@@ -1,0 +1,516 @@
+/**
+ * Default Styling
+ */
+
+ #hsd_conversations_table .pull-right {
+	float: right !important;
+	clear: right !important;
+}
+#hsd_conversations_table .pull-left {
+	float: left !important;
+	clear: left !important;
+}
+
+#hsd_conversations_table .clearfix:before,
+#hsd_conversations_table .clearfix:after {
+  display: table;
+  content: " ";
+}
+#hsd_conversations_table .clearfix:after {
+  clear: both;
+}
+
+#hsd_conversations_table .avatar {
+	max-height: 60px;
+	max-width: 60px;
+	border-radius: 50px;
+	border: 1px solid #e0e0e0;
+	background: #FFF;
+	padding: 2px;
+}
+#hsd_conversations_table .panel-title {
+	font-weight: 300;
+}
+#hsd_message_form .help-block {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #626262
+}
+#hsd_message_form .checkbox {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#hsd_support_conversation .hsd_goback {
+	display: none;
+}
+
+/**
+ * Tables
+ */
+
+#hsd_conversations_table table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+}
+#hsd_conversations_table td, 
+#hsd_conversations_table th {
+  padding: 0;
+  border: none;
+}
+
+#hsd_conversations_table {
+  max-width: 100%;
+  background-color: transparent;
+}
+#hsd_conversations_table th {
+  text-align: left;
+}
+#hsd_conversations_table .table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#hsd_conversations_table .table > thead > tr > th, 
+#hsd_conversations_table .table > tbody > tr > th, 
+#hsd_conversations_table .table > tfoot > tr > th, 
+#hsd_conversations_table .table > thead > tr > td, 
+#hsd_conversations_table .table > tbody > tr > td, 
+#hsd_conversations_table .table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+#hsd_conversations_table .table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+  white-space: nowrap;
+}
+#hsd_conversations_table .table > caption + thead > tr:first-child > th, 
+#hsd_conversations_table .table > colgroup + thead > tr:first-child > th, 
+#hsd_conversations_table .table > thead:first-child > tr:first-child > th, 
+#hsd_conversations_table .table > caption + thead > tr:first-child > td, 
+#hsd_conversations_table .table > colgroup + thead > tr:first-child > td, 
+#hsd_conversations_table .table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+#hsd_conversations_table .table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+#hsd_conversations_table .table #hsd_conversations_table .table {
+  background-color: #fff;
+}
+#hsd_conversations_table .table-condensed > thead > tr > th, 
+#hsd_conversations_table .table-condensed > tbody > tr > th, 
+#hsd_conversations_table .table-condensed > tfoot > tr > th, 
+#hsd_conversations_table .table-condensed > thead > tr > td, 
+#hsd_conversations_table .table-condensed > tbody > tr > td, 
+#hsd_conversations_table .table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+#hsd_conversations_table .table-bordered {
+  border: 1px solid #ddd;
+}
+#hsd_conversations_table .table-bordered > thead > tr > th, 
+#hsd_conversations_table .table-bordered > tbody > tr > th, 
+#hsd_conversations_table .table-bordered > tfoot > tr > th, 
+#hsd_conversations_table .table-bordered > thead > tr > td, 
+#hsd_conversations_table .table-bordered > tbody > tr > td, 
+#hsd_conversations_table .table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+#hsd_conversations_table .table-bordered > thead > tr > th, 
+#hsd_conversations_table .table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+#hsd_conversations_table .table-striped > tbody > tr:nth-child(odd) > td, 
+#hsd_conversations_table .table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+#hsd_conversations_table .table-hover > tbody > tr:hover > td, 
+#hsd_conversations_table .table-hover > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+#hsd_conversations_table col[class*="col-"] {
+  position: static;
+  display: var(--hsd_conversations_table-column);
+  float: none;
+}
+#hsd_conversations_table td[class*="col-"], 
+#hsd_conversations_table th[class*="col-"] {
+  position: static;
+  display: var(--hsd_conversations_table-cell);
+  float: none;
+}
+
+/**
+ * Labels
+ */
+
+#hsd_conversations_table .label {
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	color: #ffffff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em
+}
+
+#hsd_conversations_table a.label:hover,  a.label:focus {
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer
+}
+
+#hsd_conversations_table .label:empty {
+	display: none
+}
+
+#hsd_conversations_table .label-default {
+	background-color: #999999
+}
+
+#hsd_conversations_table .label-default[href]:hover, .label-default[href]:focus {
+	background-color: #808080
+}
+
+#hsd_conversations_table .label-primary {
+	background-color: rgb(108, 170, 228)
+}
+
+#hsd_conversations_table .label-primary[href]:hover, .label-primary[href]:focus {
+	background-color: #006687
+}
+
+#hsd_conversations_table .label-success {
+	background-color: rgb(163,  206,  105)
+}
+
+#hsd_conversations_table .label-success[href]:hover, .label-success[href]:focus {
+	background-color: #358753
+}
+
+#hsd_conversations_table .label-info {
+	background-color: rgb(108, 170, 228)
+}
+
+#hsd_conversations_table .label-info[href]:hover, .label-info[href]:focus {
+	background-color: #31b0d5
+}
+
+#hsd_conversations_table .label-warning {
+	background-color: #E49F69
+}
+
+#hsd_conversations_table .label-warning[href]:hover, .label-warning[href]:focus {
+	background-color: #b67102
+}
+
+#hsd_conversations_table .label-danger {
+	background-color: #E08F8F
+}
+
+#hsd_conversations_table .label-danger[href]:hover, .label-danger[href]:focus {
+	background-color: #d32a0e
+}
+
+#hsd_conversations_table .badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #777777;
+	line-height: 1;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-align: center;
+	background-color: #e7e7e7;
+	border-radius: 10px
+}
+
+#hsd_conversations_table .badge:empty {
+	display: none
+}
+
+#hsd_conversations_table a.badge:hover,  #hsd_conversations_table a.badge:focus {
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer
+}
+
+/**
+ * Forms
+ */
+
+#hsd_message_form .form-group {
+	margin-bottom: 15px;
+}
+
+#hsd_message_form label {
+	font-size: inherit;
+	font-weight: 600;
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+}
+
+#hsd_message_form .form-control {
+	display: block;
+	width: 100%;
+	height: 35px;
+	padding: 6px 12px;
+	font-size: 15px;
+	line-height: 1.42857143;
+	color: #6f6f6f;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+#hsd_message_form .form-control:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
+}
+
+#hsd_message_form .form-control::-moz-placeholder {
+	color: #999999;
+	opacity: 1
+}
+
+#hsd_message_form .form-control:-ms-input-placeholder {
+	color: #999999
+}
+
+#hsd_message_form .form-control::-webkit-input-placeholder {
+	color: #999999
+}
+
+#hsd_message_form .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+	cursor: not-allowed;
+	background-color: #eeeeee;
+	opacity: 1
+}
+
+#hsd_message_form textarea.form-control {
+	height: auto
+}
+
+
+/**
+ * Conversation View
+ */
+
+#hsd_conversations_table title {
+	display: inline-block;
+	color: initial;
+	font-weight: 600;
+}
+#hsd_conversations_table .time_wrap {
+	display: inline-block;
+    margin-left: 5px;
+}
+#hsd_conversations_table .time_wrap {
+	color: initial;
+}
+#hsd_conversations_table time {
+	font-size: .8em;
+	white-space: nowrap;
+}
+#hsd_conversations_table .time_wrap time {
+	font-size: .7em;
+	opacity: .3;
+}
+#hsd_conversations_table .thread_count {
+	float: right;
+}
+#hsd_conversations_table a {
+	text-decoration: none;
+}
+
+#hsd_conversations_table .img_attachments_wrap.clearfix {
+	display: block;
+	clear: both;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#hsd_conversations_table  .button-readmore.readmore-js-toggle {
+	margin-bottom: 20px;
+}
+#hsd_conversations_table #conversation_header {
+	padding: 0px;
+}
+
+#hsd_conversation_thread .panel-body a.button-readmore {
+	float: left;
+	display: inline;
+	width: auto;
+	padding: 6px 18px;
+	font-family: Source Sans Pro, Myriad Pro, Helvetica Neue, Arial;
+	font-size: 1em;
+	color: #888;
+	text-shadow: rgba(255, 255, 255, 0.3) 0 -1px 0;
+	text-decoration: none;
+	background: #EEE;
+	border: 1px;
+}
+
+#hsd_conversation_thread .panel {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#hsd_conversations_table .panel {
+	margin-bottom: 21px;
+	background-color: #ffffff;
+	border: 1px solid transparent;
+	border-radius: 0;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+
+#hsd_conversations_table .panel-body {
+	padding: 15px
+}
+
+#hsd_conversations_table .panel-heading {
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: -1;
+	border-top-left-radius: -1
+}
+
+#hsd_conversations_table .panel-heading>.dropdown .dropdown-toggle {
+	color: inherit
+}
+
+#hsd_conversations_table .panel-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17px;
+	color: inherit
+}
+
+#hsd_conversations_table .panel-title>a {
+	color: inherit
+}
+
+#hsd_conversations_table .panel-footer {
+	padding: 10px 15px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #dddddd;
+	border-bottom-right-radius: -1;
+	border-bottom-left-radius: -1
+}
+
+#hsd_conversations_table .panel>.list-group {
+	margin-bottom: 0
+}
+
+#hsd_conversations_table .panel>.list-group .list-group-item {
+	border-width: 1px 0;
+	border-radius: 0
+}
+
+#hsd_conversations_table .panel>.list-group:first-child .list-group-item:first-child {
+	border-top: 0;
+	border-top-right-radius: -1;
+	border-top-left-radius: -1
+}
+
+#hsd_conversations_table .panel>.list-group:last-child .list-group-item:last-child {
+	border-bottom: 0;
+	border-bottom-right-radius: -1;
+	border-bottom-left-radius: -1
+}
+
+#hsd_conversations_table .panel-heading+.list-group .list-group-item:first-child {
+	border-top-width: 0
+}
+
+.list-group+.panel-footer {
+	border-top-width: 0
+}
+
+#hsd_conversations_table .panel>.table-responsive {
+	border: 0;
+	margin-bottom: 0
+}
+
+#hsd_conversations_table .panel-group {
+	margin-bottom: 21px
+}
+
+#hsd_conversations_table .panel-group .panel {
+	margin-bottom: 0;
+	border-radius: 0
+}
+
+#hsd_conversations_table .panel-group .panel+.panel {
+	margin-top: 5px
+}
+
+#hsd_conversations_table .panel-group .panel-heading {
+	border-bottom: 0
+}
+
+#hsd_conversations_table .panel-group .panel-heading+.panel-collapse>.panel-body {
+	border-top: 1px solid #dddddd
+}
+
+#hsd_conversations_table .panel-group .panel-footer {
+	border-top: 0
+}
+
+#hsd_conversations_table .panel-group .panel-footer+.panel-collapse .panel-body {
+	border-bottom: 1px solid #dddddd
+}
+
+#hsd_conversations_table .panel-default {
+	border-color: #dddddd
+}
+
+#hsd_conversations_table .panel-default>.panel-heading {
+	color: #333333;
+	background-color: #f5f5f5;
+	border-color: #dddddd
+}
+
+#hsd_conversations_table span.conversation_preview {
+    margin: 10px 0px;
+    display: block;
+    border-left: 1px solid #ececec;
+    padding-left: 10px;
+}
+
+
+
+#hsd_conversations_table .panel-default>.panel-heading+.panel-collapse>.panel-body {
+	border-top-color: #dddddd
+}
+
+#hsd_conversations_table .panel-default>.panel-heading .badge {
+	color: #f5f5f5;
+	background-color: #333333
+}
+
+#hsd_conversations_table .panel-default>.panel-footer+.panel-collapse>.panel-body {
+	border-bottom-color: #dddddd
+}
